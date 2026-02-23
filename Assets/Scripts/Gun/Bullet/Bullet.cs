@@ -60,13 +60,14 @@ public class Bullet : MonoBehaviour
             ReturnToPool();
         }
 
-        void ReturnToPool()
-        {
-            isMoving = false;
+     
 
-            GunController gun = FindObjectOfType<GunController>();
-            gameObject.SetActive(false);
-        }
+    }
+    void ReturnToPool()
+    {
+        isMoving = false;
 
+        GunController gun = FindObjectOfType<GunController>();
+        gameObject.SetActive(false);
     }
 }
